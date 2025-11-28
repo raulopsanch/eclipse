@@ -42,6 +42,8 @@ public class Circulo {
 		radio = 7;
 		circulo1.radio = radio;
 		System.out.println("El área de un círculo de radio " + circulo1.radio + " es: " + circulo1.calcularArea(radio));
+		System.out.println();
+		System.out.println("Fin de programa");
 	}
 
 }
