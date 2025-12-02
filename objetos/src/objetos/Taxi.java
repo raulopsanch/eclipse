@@ -67,7 +67,6 @@ public class Taxi {
 		System.out.println("\n====Comprobar distritos====");
 		System.out.print("¿tax1 y taxi2 operan en el mismo distrito? ");
 		System.out.println(taxi1.mismoDistrito(taxi2));
-		
 		System.out.print("¿tax1 y taxi3 operan en el mismo distrito? ");
 		System.out.println(taxi1.mismoDistrito(taxi3));
 	}
