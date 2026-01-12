@@ -7,12 +7,27 @@ public class Vehiculo {
 	private String color;
 
 	public Vehiculo(String matricula, String marca, String color) {
-		super();
 		this.matricula = matricula;
 		this.marca = marca;
 		this.color = color;
 	}
 
+	public String get_matricula() {
+		return this.matricula;
+	}
+
+	public void set_matricula(String matricula) {
+		this.matricula = matricula;
+	}
+	
+	public String get_marca() {
+		return this.marca;
+	}
+
+	public void set_marca(String marca) {
+		this.marca = marca;
+	}
+	
 	public String get_color() {
 		return this.color;
 	}
