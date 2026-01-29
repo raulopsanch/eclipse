@@ -15,7 +15,7 @@ public class Gestion_Taxis {
 		Scanner entrada = new Scanner(System.in);
 
 		for (int i = 0; i < array.length; i++) {
-			System.out.print("Introduce la matrícula del taxi" + (i+1) ": ");
+			System.out.print("Introduce la matrícula del taxi" + (i+1) + ": ");
 			String matricula = entrada.nextLine();
 			
 			System.out.print("Introduce el distrito: ");
