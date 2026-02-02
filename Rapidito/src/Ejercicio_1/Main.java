@@ -1,16 +1,20 @@
 package Ejercicio_1;
 
 public class Main {
-	private Coche[] coches = new Coche[5];
+	private Coche[] coches;
 	
-	public void mostrarArray() {
+	public Main(Coche[] coches) {
+		
+	}
+	
+	public static void mostrarArray(Coche[] coches) {
 		for(Coche c : coches) {
 			System.out.println(c.toString());
 			System.out.println();
 		}
 	}
 	
-	public boolean buscarCoche(String matricula) {
+	public static boolean buscarCoche(Coche[] coches, String matricula) {
 		for (Coche c : coches) {
 			if (matricula.equalsIgnoreCase(c.getMatricula())) {
 				System.out.println("La matrícula" + matricula + " correspone con:");
