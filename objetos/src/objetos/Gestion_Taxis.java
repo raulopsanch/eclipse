@@ -7,7 +7,11 @@ public class Gestion_Taxis {
 	public static void main(String[] args) {
 		Taxi[] taxis = new Taxi[5];
 		
+		llenarArray(taxis);
 		
+		mostrarArray(taxis);
+		
+		buscarTaxi(taxis);
 
 	}
 	
@@ -18,9 +22,9 @@ public class Gestion_Taxis {
 			System.out.print("Introduce la matrícula del taxi" + (i+1) + ": ");
 			String matricula = entrada.nextLine();
 			
-			System.out.print("Introduce el distrito: ");
+			System.out.print("Introduce el distrito del taxi" + (i+1) + ": ");
 			String distrito = entrada.nextLine();
-			{}
+			
 			array[i] = new Taxi(matricula, distrito);
 		}
 	}

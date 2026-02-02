@@ -30,9 +30,8 @@ public class Persona {
 	
 	@Override
 	public String toString() {
-		return "\ndni: " + this.dni + "\nNombre: " + this.nombre +
-				"\nPuesto: " + this.puesto;
-				
+		return "\ndni: " + this.dni + "\nNombre: " + this.nombre + "\nPuesto: " + "\n\tId: " + this.puesto.get_id() + 
+				"\n\tDescripción: " + this.puesto.get_descripcion() + "\n\tSalario: " + this.puesto.get_salario();
 	}
 	
 }

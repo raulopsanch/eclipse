@@ -3,10 +3,9 @@ package objetos;
 import java.util.Scanner;
 
 public class Circulo {
-private double radio;
+	private double radio;
 	
 	public Circulo(double radio) {
-		super();
 		this.radio = radio;
 	}
 	

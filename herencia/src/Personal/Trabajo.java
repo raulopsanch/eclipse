@@ -2,12 +2,12 @@ package Personal;
 
 public class Trabajo {
 	private int id;
-	private String descripicion;
+	private String descripcion;
 	private double salario;
 	
 	public Trabajo(int id, String descripcion, double salario) {
 		this.id = id;
-		this.descripicion = descripcion;
+		this.descripcion = descripcion;
 		this.salario = salario;
 	}
 	
@@ -16,7 +16,7 @@ public class Trabajo {
 	}
 	
 	public String get_descripcion() {
-		return this.descripicion;
+		return this.descripcion;
 	}
 	
 	public double get_salario() {
@@ -25,8 +25,7 @@ public class Trabajo {
 	
 	@Override
 	public String toString() {
-		return "id: " + this.id + "\nDescripción: " + this.descripicion + 
-				"\nSalario: " + this.salario;
+		return "id: " + this.id + "\nDescripción: " + this.descripcion + "\nSalario: " + this.salario;
 	}
 	
 }
