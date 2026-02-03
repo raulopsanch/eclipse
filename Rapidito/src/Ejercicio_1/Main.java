@@ -23,6 +23,8 @@ public class Main {
 				return true;
 			}
 		}
+		System.out.println("No existe coche con esa matrícula");
+
 		return false;
 	}
 	
@@ -36,6 +38,10 @@ public class Main {
 		coches[2] = new Coche("BMW", "1234CCC", 2200, "V6 M");
 		coches[3] = new Coche("Jeep", "1234DDD", 3000, "V6 Diesel");
 		coches[4] = new Coche("Audi", "1234FFF", 2000, "Sport TD");
+		
+		Main.mostrarArray(coches);
+		
+		Main.buscarCoche(coches, "124AAV");
 		
 	}
 
