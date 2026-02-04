@@ -27,9 +27,9 @@ public class Main2 {
 		
 	public static String ocupacion(int edad,String situacion) {
 		String retorno = "Desempleado";
-		if (edad < 18 && situacion == "Estudia") retorno = "Menor";
-		if (edad >= 18 && situacion == "Estudia") retorno = "Estudiante";
-		if (edad >= 18 && situacion == "Ocupado") retorno = "Trabajador";
+		if (edad < 18 && situacion.equalsIgnoreCase("Estudia")) retorno = "Menor";
+		if (edad >= 18 && situacion.equalsIgnoreCase("Estudia")) retorno = "Estudiante";
+		if (edad >= 18 && situacion.equalsIgnoreCase("Trabaja")) retorno = "Trabajador";
 		return retorno;
 	}
 	
