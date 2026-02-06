@@ -1,4 +1,4 @@
-package Ejercicio_1;
+package Ejercicio_03;
 
 public class Persona {
 	private String nombre;
@@ -9,10 +9,6 @@ public class Persona {
 		this.edad = edad;
 	}
 	
-	public Persona(String nombre) {
-		this.nombre = nombre;
-	}
-	
 	public String getNombre() {
 		return this.nombre;
 	}
@@ -21,10 +17,7 @@ public class Persona {
 		return this.edad;
 	}
 	
-	public void setEdad(int edad) {
-		this.edad = edad;
+	public String datosPersonales() {
+		return "\nNombre: " + this.nombre + "\nEdad: " + this.edad + " años";
 	}
-	
-	
-	
 }

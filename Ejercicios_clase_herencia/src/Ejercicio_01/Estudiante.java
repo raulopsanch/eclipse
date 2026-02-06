@@ -1,4 +1,4 @@
-package Ejercicio_1;
+package Ejercicio_01;
 
 public class Estudiante extends Persona {
 	private String legajo;
