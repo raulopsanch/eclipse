@@ -1,4 +1,4 @@
-package Ejercicio_3;
+package Ejercicio_05;
 
 public class Profesor extends Persona {
 	private int idProfe;
@@ -14,7 +14,11 @@ public class Profesor extends Persona {
 		return this.idProfe;
 	}
 	
-	public String getCentro() {
+	public void setIdProfe(int idProfe) {
+		this.idProfe = idProfe;
+	}
+	
+	public String getCento() {
 		return this.centro;
 	}
 	
@@ -22,11 +26,11 @@ public class Profesor extends Persona {
 		this.centro = centro;
 	}
 	
-	public String infoProfe() {
-		return "\nId: " + this.idProfe + "\nCentro: " + this.centro;
+	public String infoProfesor() {
+		return "\nId_profesor: " + this.idProfe + "\nCentro: " + this.centro;
 	}
 	
 	public String datosCompletos() {
-		return super.datosPersonales() + infoProfe();
+		return super.datosPersonales() + this.infoProfesor();
 	}
 }

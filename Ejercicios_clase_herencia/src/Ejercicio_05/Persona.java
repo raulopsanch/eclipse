@@ -1,4 +1,4 @@
-package Ejercicio_3;
+package Ejercicio_05;
 
 public class Persona {
 	private String nombre;
@@ -18,6 +18,6 @@ public class Persona {
 	}
 	
 	public String datosPersonales() {
-		return "\nNombre: " + this.nombre + "\nEdad: " + this.edad + " años.";
+		return "\nNombre: " + this.nombre + "\nEdad: " + this.edad + " años";
 	}
 }
