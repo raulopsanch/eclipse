@@ -13,11 +13,34 @@ public class CuentaBancaria {
 		this.numCuenta = numCuenta;
 	}
 	
+	public Cliente getCliente() {
+		return this.cliente;
+	}
+	
 	public double getSaldo() {
 		return this.saldo;
 	}
 	
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
 	
+	public String numCuenta() {
+		return this.numCuenta;
+	}
 	
+	public String Depositar(double cantidad) {
+		double saldo = this.saldo + cantidad;
+		this.setSaldo(saldo);
+		
+		return "Se han añadido " + cantidad + "€ a tu cuenta";
+	}
+	
+	public String Transferencia(double cantidad, String cuenta) {
+		double saldo = this.saldo - cantidad;
+		this.setSaldo(saldo);
+		
+		return "Se han transferido " + cantidad + "€ a la cuenta " + cuenta + " Correctamente.";
+	}
 	
 }
