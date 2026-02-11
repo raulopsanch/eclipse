@@ -1,6 +1,6 @@
 package Ejercicio_1;
 
-public class Bicicleta {
+public class Bicicleta extends Vehiculo {
 private int marchas;
 	
 	public Bicicleta(String tipo, String color, int marchas) {

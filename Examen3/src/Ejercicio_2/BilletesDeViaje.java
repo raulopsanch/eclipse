@@ -1,6 +1,8 @@
 package Ejercicio_2;
 
-public class BilletesDeAvion {
+import java.util.Scanner;
+
+public class BilletesDeViaje {
 	private Persona persona;
 	private String destino;
 	private double importe;
@@ -43,9 +45,26 @@ public class BilletesDeAvion {
 		return "El destino no ha cambiado";		
 	}
 	
-	public String intercambiarBillete(Persona persona) {
-		
-		return this.persona.getNombre() + " ha perdido el billete.";
+	public Persona intercambiarBillete(Persona persona) {
+		Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("=== INTERCAMBIO DE BILLETE ===");
+        System.out.print("Ingrese el ID de la nueva persona: ");
+        int nuevoId = scanner.nextInt();
+        
+        System.out.print("Ingrese el nombre de la nueva persona: ");
+        String nuevoNombre = scanner.nextLine();
+        
+        Persona nuevaPersona = new Persona(nuevoId, nuevoNombre);
+        
+        Persona personaAntigua = this.persona;
+        
+        this.persona = nuevaPersona;
+        
+        System.out.println("Intercambio realizado. " + personaAntigua.getNombre() + 
+                         " ha perdido el billete.");
+        
+        return personaAntigua;
 	}
 	
 	@Override
