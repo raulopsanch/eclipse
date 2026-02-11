@@ -1,18 +1,24 @@
+import java.util.Scanner;
 
 public class Ejercicio_4 {
 	public static void main(String[] args) {
-		matriz(7, 7);
+		Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Introducir el tamaño de la matriz: ");
+        int n = entrada.nextInt();
+        
+        matriz(n,n);
 	}
 
-	public static void matriz(int num1, int num2) {
-		for(int i = num1 ; i > 0; i--) {
-			
-			for(int j = num2; j > 0; j--) {
-				System.out.print(j + "\t");
-				
-				
-			}
-			System.out.println();
-		}
+	public static void matriz(int filas, int columnas) {
+		int matriz = filas * columnas;
+		
+		for(int i = 0; i < filas; i++) {
+            for(int j = 0; j < columnas; j++) {
+                System.out.print(matriz + "\t");
+                matriz--;
+            }
+            System.out.println();
+        }
 	}
 }
