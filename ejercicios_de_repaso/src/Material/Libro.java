@@ -20,10 +20,10 @@ public class Libro extends Material {
 		return 21;
 	}
 	
-	public int leerPaginas(int numero) {
-		for(int i = 0; i < this.numPaginas; i++) {
-			paginas.add(new Pagina[i + 1, ""]);
-		}
-	}
+	//public int leerPaginas(int numero) {
+		//for(int i = 0; i < this.numPaginas; i++) {
+			//paginas.add(new Pagina[i + 1, ""]);
+		//}
+	//}
 
 }
