@@ -30,7 +30,7 @@ public class Alumno extends Persona{
 	public void situacionPersonal() {
 		System.out.println("La persona " + super.getNombre() + " con DNI **" + 
 				super.getDni().charAt(2) + super.getDni().charAt(3) + super.getDni().charAt(4) + "**");
-		System.out.println("Estudia en el centro " + this.centro + " el ciclo de " + this.ciclo);
+		System.out.println("Estudia en el centro " + this.centro.toUpperCase() + " el ciclo de " + this.ciclo);
 	}
 	
 	@Override
