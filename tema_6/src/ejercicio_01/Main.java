@@ -11,6 +11,10 @@ public class Main {
 		personas[3] = new Alumno("Raúl Pérez", "1234BBB", 19, "IES Cristro del Rosario", Ciclos.MECANIZADO);
 		personas[4] = new Alumno("Raquel Blazquez", "1234CCC", 16, "IES Albarejas", Ciclos.FINANZAS);
 		
+		System.out.println("Situación personal");
+		System.out.println("**************************");
+		System.out.println();
+
 		for (Persona p : personas) {
 			if (p instanceof Empleado) {
 				Empleado e = (Empleado)p;
@@ -22,7 +26,9 @@ public class Main {
 			System.out.println();
 		}
 		
-		
+		System.out.println("Datos personales");
+		System.out.println("===================");
+
 		System.out.println();
 		personas[0].datosPersonales();
 		
