@@ -49,6 +49,7 @@ public class BilletesDeViaje {
 		Scanner scanner = new Scanner(System.in);
         
         System.out.println("=== INTERCAMBIO DE BILLETE ===");
+        
         System.out.print("Ingrese el ID de la nueva persona: ");
         int nuevoId = scanner.nextInt();
         
@@ -64,7 +65,7 @@ public class BilletesDeViaje {
         System.out.println("Intercambio realizado. " + personaAntigua.getNombre() + 
                          " ha perdido el billete.");
         
-        return personaAntigua;
+        return persona;
 	}
 	
 	@Override
