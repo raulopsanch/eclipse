@@ -25,7 +25,7 @@ public abstract class Persona {
 	
 	/**
 	 * <p>Método el cual nos devuelve el nombre de la persona</p>
-	 * @return
+	 * @return el nombre de la persona
 	 */
 	public String getNombre() {
 		return this.nombre;

@@ -1,5 +1,11 @@
 package ejercicio_01;
 
+/**
+ * <p>Subclase de la superclase Persona</p>
+ * @author Raúl López
+ * @version 1.0
+ * @
+ */
 public class Empleado extends Persona {
 	private String empresa;
 	private double salario;
