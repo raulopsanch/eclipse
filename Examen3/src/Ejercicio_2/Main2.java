@@ -22,6 +22,10 @@ public class Main2 {
 		
 		System.out.println();
 		
+		billetes[0].intercambiarBillete(persona1);
+		
+		System.out.println();
+		
 		mostrarArray(billetes);
 		
 		
