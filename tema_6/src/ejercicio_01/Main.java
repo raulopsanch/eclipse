@@ -7,9 +7,9 @@ public class Main {
 		
 		personas[0] = new Empleado("Juan Márquez", "5678AAA", 35, "Seur", 2500);
 		personas[1] = new Empleado("María Garlen", "5678BBB", 27, "Amazon", 1850);
-		personas[2] = new Alumno("Esther Muras", "1234AAA", 17, "IES Suárez de Figueroa", Ciclos.DAW);
-		personas[3] = new Alumno("Raúl Pérez", "1234BBB", 19, "IES Cristro del Rosario", Ciclos.MECANIZADO);
-		personas[4] = new Alumno("Raquel Blazquez", "1234CCC", 16, "IES Albarejas", Ciclos.FINANZAS);
+		personas[2] = new Alumno("Esther Muras", "1234AAA", 17, "IES Suárez de Figueroa", Ciclos.daw);
+		personas[3] = new Alumno("Raúl Pérez", "1234BBB", 19, "IES Cristro del Rosario", Ciclos.mecanizado);
+		personas[4] = new Alumno("Raquel Blazquez", "1234CCC", 16, "IES Albarejas", Ciclos.finanzas);
 		
 		System.out.println("Situación personal");
 		System.out.println("**************************");
