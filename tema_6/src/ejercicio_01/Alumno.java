@@ -1,7 +1,7 @@
 package ejercicio_01;
 
 enum Ciclos {
-	DAW, ASIR, ELECTRICIDAD, FINANZAS, MECANIZADO
+	daw, asir, electicidad, finanzas, mecanizado
 }
 
 public class Alumno extends Persona{
