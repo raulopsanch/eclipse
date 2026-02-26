@@ -1,6 +1,5 @@
 package Ejercicio_2;
 
-import java.util.Scanner;
 
 public class BilletesDeViaje {
 	private Persona persona;
@@ -38,34 +37,26 @@ public class BilletesDeViaje {
 		return "Comprado billete con destino " + destino + " por " + this.persona.getNombre();
 	}
 	
-	public String cambioDestino(String destino) {
-		if (this.persona.getNombre().contentEquals(destino)) {
-			return this.persona.getNombre() + " con destino " + this.destino + " ha cambiado por " + destino;
+	public String cambioDestino(String nuevoDestino) {
+		if (this.destino != null) {
+			String antiguoDestino = this.destino;
+			this.destino = nuevoDestino;
+			return this.persona.getNombre() + " con destino " +
+					antiguoDestino + " ha cambiado por " +
+					nuevoDestino;
+		} else {
+			return "El destino no ha cambiado";
 		}
-		return "El destino no ha cambiado";		
 	}
 	
-	public Persona intercambiarBillete(Persona persona) {
-		Scanner scanner = new Scanner(System.in);
+	public Persona intercambiarBillete(Persona nuevaPersona) {
+		Persona personaAntigua = this.persona;
+		this.persona = nuevaPersona;
         
-        System.out.println("=== INTERCAMBIO DE BILLETE ===");
+        System.out.println("Intercambio realizado.");
+        System.out.println(personaAntigua.getNombre() + " ha perdido el billete");
         
-        System.out.print("Ingrese el ID de la nueva persona: ");
-        int nuevoId = scanner.nextInt();
-        
-        System.out.print("Ingrese el nombre de la nueva persona: ");
-        String nuevoNombre = scanner.nextLine();
-        
-        Persona nuevaPersona = new Persona(nuevoId, nuevoNombre);
-        
-        Persona personaAntigua = this.persona;
-        
-        this.persona = nuevaPersona;
-        
-        System.out.println("Intercambio realizado. " + personaAntigua.getNombre() + 
-                         " ha perdido el billete.");
-        
-        return persona;
+        return personaAntigua;
 	}
 	
 	@Override

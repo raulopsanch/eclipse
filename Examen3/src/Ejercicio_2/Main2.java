@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Main2 {
 	public static void main(String[] args) {
-		Scanner entrada = new Scanner(System.in);
-		
+		Scanner scanner = new Scanner(System.in);
+
 		Persona persona1 = new Persona(345, "Alberto");
 		Persona persona2 = new Persona(235, "Ana");
 		Persona persona3 = new Persona(128, "Marta");
@@ -16,13 +16,26 @@ public class Main2 {
 		billetes[1] = new BilletesDeViaje(persona2);
 		billetes[2] = new BilletesDeViaje(persona3, "Barcelona");
 		
+		System.out.println("=== CAMBIO DE DESTINO ===");
+
 		System.out.println(billetes[1].cambioDestino("Sevilla"));
 		
+		System.out.println();
+		System.out.println("=== COMPRAR BILLETE ===");
+
 		System.out.println(billetes[1].comprarBillete("Sevilla"));
 		
 		System.out.println();
-		
-		billetes[0].intercambiarBillete(persona1);
+		System.out.println("=== INTERCAMBIO DE BILLETE ===");
+
+		System.out.print("Ingrese el ID de la nueva persona: ");
+		int nuevoId = Integer.parseInt(scanner.nextLine());
+
+		System.out.print("Ingrese el nombre de la nueva persona: ");
+		String nuevoNombre = scanner.nextLine();
+
+		Persona nuevaPersona = new Persona(nuevoId, nuevoNombre);
+		billetes[0].intercambiarBillete(nuevaPersona);
 		
 		System.out.println();
 		

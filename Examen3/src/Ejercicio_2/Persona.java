@@ -22,6 +22,6 @@ public class Persona {
 	}
 	
 	public void setNombre(String valor) {
-		this.nombre = nombre;
+		this.nombre = valor;
 	}
 }

@@ -12,10 +12,12 @@ public abstract class Persona {
 	private int edad;
 	
 	/**
-	 * <p>Constructor que inicializa una persona</p>
-	 * @param nombre
-	 * @param dni
-	 * @param edad
+	 * <p>Constructor que inicializa una persona. Contiene los siguientes parámetros:</p>
+	 * <ul>
+	 * 	<li>@param nombre</li>
+	 * 	<li>@param dni</li>
+	 * 	<li>@param edad</li>
+	 * </ul> 
 	 */
 	public Persona(String nombre, String dni, int edad) {
 		this.nombre = nombre;
@@ -24,7 +26,7 @@ public abstract class Persona {
 	}
 	
 	/**
-	 * <p>Método el cual nos devuelve el nombre de la persona</p>
+	 * <p>el método {@codegetNombre} nos devuelve el nombre de la persona</p>
 	 * @return el nombre de la persona
 	 */
 	public String getNombre() {
