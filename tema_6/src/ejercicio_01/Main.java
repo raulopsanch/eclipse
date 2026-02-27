@@ -1,5 +1,10 @@
 package ejercicio_01;
 
+
+/**
+ * <p>La clase "Main" es la encargada de injstanciar todos los objetos de la clase Persona con sus
+ * respectivas subclases y llamar a cada uno de sus respectivos métodos</p>
+ */
 public class Main {
 
 	public static void main(String[] args) {
