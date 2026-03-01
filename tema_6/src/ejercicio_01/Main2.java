@@ -5,21 +5,26 @@ import java.util.Scanner;
 public class Main2 {
 
 	public static void main(String[] args) {
-		Persona[] personas = new Persona[4];
+		Persona[] lista = new Persona[2];
 		
 		
-		personas[0] = solicitarAlumno();
-		personas[0].situacionPersonal();
-		System.out.println();
-		personas[1] = solicitarEmpleado();
-		personas[1].situacionPersonal();
+		lista[0] = solicitarAlumno();
+		lista[0].situacionPersonal();
+		System.out.println("\n");
+		lista[1] = solicitarEmpleado();
+		lista[1].situacionPersonal();
 		
+		System.out.println("\n++++Lista++++");
+		mostrarArray(lista);
 	}
 	
 	
-	public static Alumno solicitarAlumno() {
+	public static Alumno solicitarAlumno() {	
 		Scanner entrada = new Scanner(System.in);
-		
+
+		System.out.println("----Solicitar alumno----");
+		System.out.println("-----------------------------");
+
 		System.out.print("Introduce tu nombre: ");
 		String nombre = entrada.nextLine().toUpperCase();
 			
@@ -32,16 +37,37 @@ public class Main2 {
 		String dni = entrada.nextLine();
 			
 		System.out.print("Introduce tu edad: ");
-		int edad = entrada.nextInt();
+		int edad = Integer.parseInt(entrada.nextLine());
 		
-		Alumno a = new Alumno(completo, dni, edad);
+		System.out.print("Introduce el centro: ");
+		String centro = entrada.nextLine();
 		
-		return a;
+		System.out.print("Introduce un ciclo: ");
+		String cicloSTR = entrada.nextLine();
+		Ciclos cicloEnum = Ciclos.valueOf(cicloSTR);
+		
+		if (cicloSTR.equals(" ") & centro.equals(" ")) {
+			Alumno a = new Alumno(completo, dni, edad);
+			return a;
+		} else if (cicloSTR.equals(" ")) {
+			Alumno a = new Alumno(completo, dni, edad, centro);
+			return a;
+		} else if (centro.equals( " ")) {
+			Alumno a = new Alumno(completo, dni, edad, cicloEnum);
+			return a;
+		} else {
+			Alumno a = new Alumno(completo, dni, edad, centro, cicloEnum);
+			return a;
+		}
+		
 	}
 	
 	
 	public static Empleado solicitarEmpleado() {
 		Scanner entrada = new Scanner(System.in);
+
+		System.out.println("****Solicitar empleado****");
+		System.out.println("-----------------------------");
 		
 		System.out.print("Introduce tu nombre y apellido: ");
 		String nombre = entrada.nextLine().toUpperCase();
@@ -50,7 +76,7 @@ public class Main2 {
 		String dni = entrada.nextLine().toUpperCase();
 			
 		System.out.print("Introduce tu edad: ");
-		int edad = entrada.nextInt();
+		int edad = Integer.parseInt(entrada.nextLine());
 			
 		System.out.print("Nombre de la empresa: ");
 		String empresa = entrada.nextLine().toUpperCase();
@@ -61,14 +87,23 @@ public class Main2 {
 			
 		salario = salario * 14 * 1.18;
 			
-		Empleado e = new Empleado(nombre, dni, edad, empresa, salarioNeto);
+		Empleado e = new Empleado(nombre, dni, edad, empresa, salario);
 		
 		return e;
 	}
 	
 	
-	public static void mostrarAlumnos(Persona[] array) {
-		
+	public static void mostrarArray(Persona[] array) {
+		for (Persona p : array) {
+			if (p instanceof Alumno) {
+				Alumno a = (Alumno)p;
+				a.datosPersonales();
+			} else if (p instanceof Empleado) {
+				Empleado e = (Empleado)p;
+				e.datosPersonales();
+			}
+			System.out.println();
+		}
 	}
 
 }

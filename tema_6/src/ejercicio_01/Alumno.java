@@ -46,6 +46,18 @@ public class Alumno extends Persona{
 		this.ciclo = Ciclos.asir;
 	}
 	
+	public Alumno(String nombre, String dni, int edad, String centro) {
+		super(nombre, dni, edad);
+		this.centro = centro;
+		this.ciclo = Ciclos.asir;
+	}
+	
+	public Alumno(String nombre, String dni, int edad, Ciclos ciclo) {
+		super(nombre, dni, edad);
+		this.centro = "IES Suarez";
+		this.ciclo = ciclo;
+	}
+	
 	public String getCentro() {
 		return this.centro;
 	}
