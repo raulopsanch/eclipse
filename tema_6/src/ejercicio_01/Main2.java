@@ -5,17 +5,22 @@ import java.util.Scanner;
 public class Main2 {
 
 	public static void main(String[] args) {
-		Persona[] lista = new Persona[2];
+		Persona[] lista = new Persona[4];
 		
+		for (int i = 0; i < 3; i++) {
+			lista[i] = solicitarAlumno();
+			System.out.println();
+		} 
 		
-		lista[0] = solicitarAlumno();
-		lista[0].situacionPersonal();
-		System.out.println("\n");
-		lista[1] = solicitarEmpleado();
-		lista[1].situacionPersonal();
+		lista[3] = solicitarEmpleado();
 		
-		System.out.println("\n++++Lista++++");
-		mostrarDatosPersonales(lista);
+		System.out.println("\nSituación personal");
+		System.out.println("--------------------");
+		mostrarSituacionPersonal(lista);
+		
+		System.out.println("\nAlumno y ciclo");
+		System.out.println("----------------");
+		mostrarNombreYCiclo(lista);
 	}
 	
 	
@@ -99,10 +104,47 @@ public class Main2 {
 				a.situacionPersonal();;
 			} else if (p instanceof Empleado) {
 				Empleado e = (Empleado)p;
-				e.situacionPersonal();;
+				e.situacionPersonal();
 			}
 			System.out.println();
 		}
 	}
+	
+	
+	public static void mostrarNombreYCiclo(Persona[] array) {
+		for (Persona p : array) {
+			if (p instanceof Alumno) {
+				Alumno a = (Alumno)p;
+				
+				System.out.println(a.getNombre().toUpperCase() + " en el ciclo " + a.getCiclo().name().toUpperCase());
+				System.out.println();
+			}
+		}
+	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
