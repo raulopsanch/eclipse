@@ -15,7 +15,7 @@ public class Main2 {
 		lista[1].situacionPersonal();
 		
 		System.out.println("\n++++Lista++++");
-		mostrarArray(lista);
+		mostrarDatosPersonales(lista);
 	}
 	
 	
@@ -80,8 +80,7 @@ public class Main2 {
 			
 		System.out.print("Nombre de la empresa: ");
 		String empresa = entrada.nextLine().toUpperCase();
-		
-			
+					
 		System.out.print("Introduce tu salario mensual: ");
 		double salario = entrada.nextDouble();
 			
@@ -93,14 +92,14 @@ public class Main2 {
 	}
 	
 	
-	public static void mostrarArray(Persona[] array) {
+	public static void mostrarSituacionPersonal(Persona[] array) {
 		for (Persona p : array) {
 			if (p instanceof Alumno) {
 				Alumno a = (Alumno)p;
-				a.datosPersonales();
+				a.situacionPersonal();;
 			} else if (p instanceof Empleado) {
 				Empleado e = (Empleado)p;
-				e.datosPersonales();
+				e.situacionPersonal();;
 			}
 			System.out.println();
 		}
