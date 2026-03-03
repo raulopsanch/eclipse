@@ -14,6 +14,11 @@ public class Main2 {
 		
 		lista[3] = solicitarEmpleado();
 		
+		System.out.println("\nCambio de ciclo");
+		System.out.println("--------------");
+		cambiarCiclo(lista[0]);
+		mostrarNombreYCiclo(lista[0]);
+		
 		System.out.println("\nSituación personal");
 		System.out.println("--------------------");
 		mostrarSituacionPersonal(lista);
@@ -98,6 +103,16 @@ public class Main2 {
 		Empleado e = new Empleado(nombre, dni, edad, empresa, salario);
 		
 		return e;
+	}
+	
+	
+	public static void cambiarCiclo(Persona persona) {
+		if (persona instanceof Alumno) {
+			Alumno a = (Alumno)persona;
+			Ciclos ciclo = Ciclos.electicidad;
+			
+			a.setCiclo(ciclo);
+		}
 	}
 	
 	
