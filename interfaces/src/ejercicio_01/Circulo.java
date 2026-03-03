@@ -13,7 +13,7 @@ public class Circulo implements Figura{
 	
 	@Override
 	public double calcularArea() {
-		double area = Math.PI * (radio * radio);
+		double area = Math.PI * Math.pow(radio, 2);
 		return area;
 	}
 	
