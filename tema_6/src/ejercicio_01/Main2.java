@@ -20,7 +20,11 @@ public class Main2 {
 		
 		System.out.println("\nAlumno y ciclo");
 		System.out.println("----------------");
-		mostrarNombreYCiclo(lista);
+		mostrarNombreYCiclo(lista[1]);
+		
+		System.out.println("\nAlumnos y ciclos");
+		System.out.println("----------------");
+		mostrarAlumnosYCiclos(lista);
 	}
 	
 	
@@ -111,13 +115,29 @@ public class Main2 {
 	}
 	
 	
-	public static void mostrarNombreYCiclo(Persona[] array) {
-		for (Persona p : array) {
+	public static void mostrarNombreYCiclo(Persona persona) {
+		if (persona instanceof Alumno) {
+			Alumno a = (Alumno)persona;
+			System.out.println(a.getNombre().toUpperCase() + " en el ciclo " + a.getCiclo().name().toUpperCase());			
+
+		}
+	}
+	
+	
+	public static void mostrarAlumnosYCiclos(Persona[] lista) {
+		for (Persona p : lista) {
 			if (p instanceof Alumno) {
 				Alumno a = (Alumno)p;
 				
-				System.out.println(a.getNombre().toUpperCase() + " en el ciclo " + a.getCiclo().name().toUpperCase());
-				System.out.println();
+				String[] separarNombre = a.getNombre().split(" ");
+				String nombre = separarNombre[0];
+				Ciclos ciclo = a.getCiclo();
+				
+				if (ciclo == Ciclos.asir) {
+					System.out.println(nombre.toUpperCase() + " --- " + ciclo.name().toUpperCase());
+				} else {
+					System.out.println(nombre.toLowerCase() + " --- " + ciclo.name().toLowerCase());
+				}
 			}
 		}
 	}
