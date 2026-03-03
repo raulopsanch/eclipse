@@ -45,7 +45,7 @@ public class Polideportivo implements InstalacionDeportiva, Edificio{
 	
 	@Override
 	public enum getTipoDeInstalacion() {
-		
+		return TipoDeInstalacion;
 	}
 	
 	
