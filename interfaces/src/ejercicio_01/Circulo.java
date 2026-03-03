@@ -1,7 +1,5 @@
 package ejercicio_01;
 
-
-
 public class Circulo implements Figura{
 	private double radio;
 	
