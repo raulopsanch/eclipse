@@ -1,8 +1,5 @@
 package ejercicio_60;
 
-enum Tipos {
-	ABIERTO, TECHADO;
-}
 
 public class Polideportivo implements InstalacionDeportiva, Edificio{
 	private String nombre;
@@ -53,7 +50,8 @@ public class Polideportivo implements InstalacionDeportiva, Edificio{
 	@Override
 	public String toString() {
 		return "\nNombre: " + this.nombre + "\nLargo: " + this.largo + " m" +
-				"\nAncho: " + this.ancho + " m\nTipo: " + this.tipo;
+				"\nAncho: " + this.ancho + " m\nTipo: " + this.getTipoDeInstalacion() + 
+				"\nSuperficie: " + this.getSuperficieEdificio() + " m2";
 	}
 	
 }
