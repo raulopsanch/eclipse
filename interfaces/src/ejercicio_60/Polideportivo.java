@@ -1,6 +1,6 @@
 package ejercicio_60;
 
-enum TipoDeInstalacion {
+enum Tipos {
 	ABIERTO, TECHADO;
 }
 
@@ -8,7 +8,7 @@ public class Polideportivo implements InstalacionDeportiva, Edificio{
 	private String nombre;
 	private int largo;
 	private int ancho;
-	private TipoDeInstalacion tipo;
+	private Tipos tipo;
 	
 	public Polideportivo() {
 		this.nombre = null;
@@ -18,7 +18,7 @@ public class Polideportivo implements InstalacionDeportiva, Edificio{
 	}
 	
 	
-	public Polideportivo(String nombre, int largo, int ancho, TipoDeInstalacion tipo) {
+	public Polideportivo(String nombre, int largo, int ancho, Tipos tipo) {
 		this.nombre = nombre;
 		this.largo = largo;
 		this.ancho = ancho;
@@ -38,20 +38,22 @@ public class Polideportivo implements InstalacionDeportiva, Edificio{
 		return this.ancho;
 	}
 	
-	public TipoDeInstalacion getTipo() {
-		return this.tipo;
-	}
-	
 	
 	@Override
-	public enum getTipoDeInstalacion() {
-		return TipoDeInstalacion;
+	public Tipos getTipoDeInstalacion() {
+		return this.tipo;
 	}
 	
 	
 	@Override
 	public double getSuperficieEdificio() {
 		return this.largo * this.ancho;
+	}
+	
+	@Override
+	public String toString() {
+		return "\nNombre: " + this.nombre + "\nLargo: " + this.largo + " m" +
+				"\nAncho: " + this.ancho + " m\nTipo: " + this.tipo;
 	}
 	
 }
