@@ -1,5 +1,5 @@
 package Ejercicio_02;
-
+//https://docs.oracle.com/javase/8/docs/api/
 import java.util.Random;
 
 public class UsoDeFunciones {
