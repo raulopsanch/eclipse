@@ -58,7 +58,6 @@ public class UsoDeFunciones {
 		String palabra = lista[1];
 		
 		return palabra;
-		
 	}
 	
 	
