@@ -1,5 +1,7 @@
 package Ejercicio_02;
-//https://docs.oracle.com/javase/8/docs/api/
+
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.Random;
 
 public class UsoDeFunciones {
@@ -30,26 +32,61 @@ public class UsoDeFunciones {
 		System.out.println("-----------------------");
 		System.out.println(añadirTexto(texto));
 		
+		
 		System.out.println("\n****Mostrar la segunda plabra****");
 		System.out.println("-----------------------------------");
 		System.out.println(mostrarSegundaPalabra(texto));
+		
 		
 		System.out.println("\n****Texto separado con guión****");
 		System.out.println("-----------------------------------");
 		mostrarTextoGuion(texto);
 		
+		
 		System.out.println("\n****Mostrar cada palabra en diferentes líneas****");
 		System.out.println("----------------------------------------------------");
 		palabraPorLinea(texto);
+		
 		
 		System.out.println("\n****Reemplazar texto****");
 		System.out.println("----------------------------------------------------");
 		texto = reemplazarTexto(texto);
 		System.out.println(texto);
 		
+		
 		System.out.println("\n****Mostrar la segunda plabra****");
 		System.out.println("-----------------------------------");
 		System.out.println(mostrarSegundaPalabra(texto));
+				
+		System.out.println("\n****Fecha será dentro de 29 días****");
+		System.out.println("--------------------------------------");
+		System.out.println(LocalDate.now().plusDays(29));
+		
+		
+		System.out.println("\n****Días transcurridos desde el 31-12-2015****");
+		System.out.println("------------------------------------------------");
+		
+		LocalDate fechaObjetivo = LocalDate.of(2015, 12, 31);
+		LocalDate fechaActual = LocalDate.now();
+		
+		long diasPasados = ChronoUnit.DAYS.between(fechaObjetivo, fechaActual);
+		
+		System.out.println("Fecha objetivo: " + fechaObjetivo);
+		System.out.println("Fecha actual: " + fechaActual);
+		System.out.println("Días transcurridos: " + diasPasados + " días");
+		
+		
+		System.out.println("\n****Días transcurridos desde el 17-05-2020****");
+		System.out.println("------------------------------------------------");
+		
+		fechaObjetivo = LocalDate.of(2020, 05, 17);
+		fechaActual = LocalDate.now();
+		
+		diasPasados = ChronoUnit.DAYS.between(fechaObjetivo, fechaActual);
+		
+		System.out.println("Fecha objetivo: " + fechaObjetivo);
+		System.out.println("Fecha actual: " + fechaActual);
+		System.out.println("Días transcurridos: " + diasPasados + " días");
 		
 	}
 	
