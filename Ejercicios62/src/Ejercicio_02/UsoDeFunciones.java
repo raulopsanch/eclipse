@@ -5,31 +5,30 @@ import java.util.Random;
 public class UsoDeFunciones {
 
 	public static void main(String[] args) {
-		double numero = 13;
-		String texto = "Programación en Java";
+		double numero = 13;		
 		
-		// Raíz cuadrada del número
 		System.out.println("****Raíz cuadrada de 13****");
 		System.out.println("---------------------------");
 		System.out.println("Raíz cuadrada de " + numero + "= " + Math.sqrt(numero));
-		
-		// Potencia 3 de número
+				
 		System.out.println("\n****13 elevado a 3****");
 		System.out.println("------------------------");
 		System.out.println("13^3= " + Math.pow(numero, 3));
-		
-		// Número aleatorio menor a 1000
+				
 		System.out.println("\n****Número aleatorio menor a 1000****");
 		System.out.println("----------------------------------------");
 		Random r = new Random();
 
 		int num = r.nextInt(1000);
-		System.out.println(numero);
+		System.out.println(num);
+		
+		
+		String texto = "Programación en Java";
+
 		
 		System.out.println("\n****Añadir texto****");
 		System.out.println("-----------------------");
 		System.out.println(añadirTexto(texto));
-
 		
 		System.out.println("\n****Mostrar la segunda plabra****");
 		System.out.println("-----------------------------------");
@@ -42,13 +41,24 @@ public class UsoDeFunciones {
 		System.out.println("\n****Mostrar cada palabra en diferentes líneas****");
 		System.out.println("----------------------------------------------------");
 		palabraPorLinea(texto);
+		
+		System.out.println("\n****Reemplazar texto****");
+		System.out.println("----------------------------------------------------");
+		texto = reemplazarTexto(texto);
+		System.out.println(texto);
+		
+		System.out.println("\n****Mostrar la segunda plabra****");
+		System.out.println("-----------------------------------");
+		System.out.println(mostrarSegundaPalabra(texto));
+		
 	}
 	
 	
-	public static String añadirTexto(String texto) {		
-		String nuevo_texto = texto.substring(0, 13) + "orienetada a objetos" + texto.substring(12);
-		
-		return nuevo_texto;
+	public static String añadirTexto(String texto) {
+		if (texto.length() < 13) {
+			return texto;
+		}
+		return texto.substring(0, 13) + "orientada a objetos" + texto.substring(12);		
 	}
 	
 	
@@ -58,10 +68,9 @@ public class UsoDeFunciones {
 		String palabra = lista[1];
 		
 		return palabra;
-		
 	}
 	
-	
+		
 	public static void mostrarTextoGuion(String texto) {
 		String nuevo_texto = añadirTexto(texto);
 		
@@ -76,6 +85,18 @@ public class UsoDeFunciones {
 		for (String palabra : palabras) {
 			System.out.println(palabra);
 		}
+	}
+	
+	
+	public static String reemplazarTexto(String texto) {
+		String nuevo_texto = añadirTexto(texto);
+		
+		 if (nuevo_texto.contains("Programación orientada a objetos")) {
+		        String nuevoTexto = nuevo_texto.replace("Programación orientada a objetos", "POO");
+		        return nuevoTexto;
+		    } else { 
+		        return "error: texto no encontrado";
+		    }
 	}
 
 }
