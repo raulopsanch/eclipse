@@ -30,7 +30,7 @@ public class Pedido {
 	
 	
 	public void actualizarEstadoPedido(Estado estado) {
-		System.out.println("Hola_mund0");
+		
 	}
 	
 }
