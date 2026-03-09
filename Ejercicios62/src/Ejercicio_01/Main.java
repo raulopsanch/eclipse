@@ -47,7 +47,7 @@ public class Main {
 		}
 			
 		System.out.println("\n=== EMPLEADO CON EL NOMBRE MÁS LARGO ===");
-	     System.out.println(nombreMasLargo.getNombre() + ": " + nombreMasLargo.getNombre().length() + " letras");
+	    System.out.println(nombreMasLargo.getNombre() + ": " + nombreMasLargo.getNombre().length() + " letras");
 	     	     	
 	}
 
