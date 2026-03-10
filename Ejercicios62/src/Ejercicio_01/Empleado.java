@@ -1,8 +1,7 @@
 package Ejercicio_01;
 
-import java.time.LocalDate;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 
 public class Empleado implements Bonificar, Calcular, Mostrar{
 	private String nombre;
@@ -10,13 +9,12 @@ public class Empleado implements Bonificar, Calcular, Mostrar{
 	private double salarioBase;
 	private LocalDate fechaIngreso;
 	
-	public Empleado(String nombre, String apellidos, double salarioBase, String fechaIngreso) {
+	public Empleado(String nombre, String apellidos, double salarioBase, LocalDate fechaIngreso) {
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 		this.salarioBase = salarioBase;
+		this.fechaIngreso = fechaIngreso;
 		
-		DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy/M/d");
-		this.fechaIngreso = LocalDate.parse(fechaIngreso, formato);
 	}
 	
 	public String getNombre() {
@@ -41,7 +39,13 @@ public class Empleado implements Bonificar, Calcular, Mostrar{
 	
 	@Override
 	public double calcularSalario() {
-		return this.salarioBase *  (1 + PORCENTAJE_SALARIO);
+		LocalDate fechaActual = LocalDate.now();
+		Period periodo = Period.between(this.fechaIngreso, fechaActual);
+		int anho = periodo.getYears();
+				
+		double incremento = this.salarioBase * PORCENTAJE_SALARIO * anho;
+		
+		return salarioBase + incremento;
 	}
 	
 	@Override
