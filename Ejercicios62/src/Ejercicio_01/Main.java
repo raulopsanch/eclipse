@@ -1,13 +1,15 @@
 package Ejercicio_01;
 
+import java.time.LocalDate;
+
 public class Main {
 
 	public static void main(String[] args) {
 		Empleado[] empleados = new Empleado[3];
 		
-		empleados[0] = new Empleado("Juan", "Lavado", 2400, "2014/5/10");
-		empleados[1] = new Empleado("Soledad", "García López", 2000, "2015/4/11");
-		empleados[2] = new Empleado("Margarita", "Pérez", 2600, "2019/9/01");
+		empleados[0] = new Empleado("Juan", "Lavado", 2400, LocalDate.of(2014, 5, 10));
+		empleados[1] = new Empleado("Soledad", "García López",2000, LocalDate.of(2015, 4, 11));
+		empleados[2] = new Empleado("Margarita", "Pérez", 2600, LocalDate.of(2019, 9, 1));
 		
 		for (Empleado e : empleados) {
 			e.mostrarInformacion();
