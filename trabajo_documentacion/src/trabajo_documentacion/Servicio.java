@@ -45,8 +45,9 @@ public class Servicio {
 	/**
 	 * <p>Borra un pedido del sistema</p>
 	 * @param pedido
+	 * @param id
 	 */
-	public void cancelarPedido(Pedido[] pedido) {
+	public void cancelarPedido(Pedido[] pedido, int id) {
 		
 	}
 	
