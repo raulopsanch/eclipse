@@ -32,11 +32,16 @@ public class Servicio {
 	 * <p>Modifica el pedido de un sistema</p>
 	 * @param pedido
 	 * @param id
+	 * @param nombre
+	 * @param precio
+	 * @param estado
+	 * @param diasEntrega
 	 */
-	public void modificarPedido(Pedido[] pedido, int id) {
+	public void modificarPedido(Pedido[] pedido, int id, 
+			String nombre, double precio, Estado estado, int diasEntrega) {
 		for (int i = 0; i < pedido.length; i++) {
 			if (id == pedido[i].getId()) {
-				pedido[i] = pedido[i].crearPedido(null, i, null, i);
+				pedido[i] = pedido[i].crearPedido(nombre, precio, estado, diasEntrega);
 			}
 		}
 	}
