@@ -119,6 +119,15 @@ public class Pedido {
 	
 	
 	/**
+	 * <p></p>
+	 * @return
+	 */
+	public int getContadorPedido() {
+		return this.contadorPedidos;
+	}
+	
+	
+	/**
 	 * <p>Crea un nuevo pedido y lo añade al sistema</p>
 	 * 
 	 * @param nombre Nombre del producto
@@ -216,6 +225,11 @@ public class Pedido {
 	}
 	
 	
+	/**
+	 * <p>Método que sirve para buscar los pedidos hecho
+	 * en una fecha determinada</p>
+	 * @param fecha
+	 */
 	public void pedidosRealizadosEnUnaFecha(LocalDate fecha) {
 		for (Pedido p : pedidos) {
 			if (this.getFechaRealizacion().equals(fecha)) {
@@ -224,6 +238,11 @@ public class Pedido {
 		}
 	}
 	
+	
+	/**
+	 * <p>Método sobreescrito para ver la información de
+	 * los pedidods realizados</p>
+	 */
 	@Override
 	public String toString() {
 		return "\nId pedido: " + this.id + this.producto.toString() + "\nRealizado: " + this.fechaRealizacion +
