@@ -53,7 +53,11 @@ public class Servicio {
 	 * @param id
 	 */
 	public void cancelarPedido(Pedido[] pedido, int id) {
-		
+		for (int i = 0; i < pedido.length; i++) {
+			if (pedido[i].getId() == id) {
+				
+			}
+		}
 	}
 	
 }
