@@ -16,14 +16,14 @@ public class Main {
 	
 	public static double calcularTiempo(Triatleta tri) {
 		Duration duracion = Duration.between(tri.getHoraSalida(), tri.getHoraLlegada());
-		double minutos = duracion.toMinutes();
+		double minutos = duracion.toSeconds();
 		
 		return minutos;
 	}
 	
 	
-	public static void ganador(Triatleta[] array, Triatleta tri) {
-		Triatleta tiempo = tri;
+	public static void ganador(Triatleta[] array) {
+		Triatleta tiempo = array[0];
 		
 		for (Triatleta t : array) {
 			if (t.getTiempo() < tiempo.getTiempo()) {
@@ -35,10 +35,10 @@ public class Main {
 	}
 	
 	
-	public static void Podium(Triatleta[] array, Triatleta tri) {
-		Triatleta tiempo1 = tri;
-		Triatleta tiempo2 = tri;
-		Triatleta tiempo3 = tri;
+	public static void Podium(Triatleta[] array) {
+		Triatleta tiempo1 = array[0];
+		Triatleta tiempo2 = array[0];
+		Triatleta tiempo3 = array[0];
 		
 		for (Triatleta t : array) {
 			if (t.getTiempo() > tiempo1.getTiempo()) {
