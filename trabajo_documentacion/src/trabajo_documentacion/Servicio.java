@@ -52,12 +52,18 @@ public class Servicio {
 	 * @param pedido
 	 * @param id
 	 */
-	public void cancelarPedido(Pedido[] pedido, int id) {
+	public boolean cancelarPedido(Pedido[] pedidos, int id) {
 		for (int i = 0; i < pedido.length; i++) {
-			if (pedido[i].getId() == id) {
-
+			if (pedidos[i].getId() == id) {
+				pedidos[i] = null;
+				System.out.println("Pedido cancelado");
+				return true;
 			}
 		}
+
+		System.out.println("Ideentificador no encontrado");
+		return false;
+		
 	}
 	
 }
