@@ -41,8 +41,11 @@ public class Servicio {
 	 */
 	public void modificarPedido(ArrayList<Pedido> pedido, int id,
 			String nombre, double precio, Estado estado, int diasEntrega) {
-		for (int i = 0; i < pedido.size() -1; i++) {
-			if (id == pedido.get(i).getId()) {
+		for (Pedido p : pedido) {
+			if (id == p.getId()) {
+				Producto productoActual = p.getProducto();
+					productoActual.setNombreProducto(nombre);
+					productoActual.setPrecioProducto(precio);
 
 			}
 		}
