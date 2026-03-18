@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d1a5813c-a9ce-46a4-912f-e512793c28a5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../trabajoDocumentacion/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../trabajoDocumentacion/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../trabajoDocumentacion/src/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../trabajoDocumentacion/src/trabajoDocumentacion/Estado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../trabajoDocumentacion/src/trabajoDocumentacion/Pedido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../trabajoDocumentacion/src/trabajoDocumentacion/Producto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../trabajoDocumentacion/src/trabajoDocumentacion/Servicio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/allclasses-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/allpackages-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/element-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/index-files/index-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/index-files/index-10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/index-files/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/index-files/index-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/index-files/index-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/index-files/index-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/index-files/index-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/index-files/index-7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/index-files/index-8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/index-files/index-9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/legal/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/legal/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/legal/dejavufonts.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/legal/jquery.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/legal/jqueryUI.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/member-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/module-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/package-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/copy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSans-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSans-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSans-BoldOblique.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSans-BoldOblique.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSans-Oblique.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSans-Oblique.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSans.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSans.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSansMono-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSansMono-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSansMono-BoldOblique.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSansMono-BoldOblique.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSansMono-Oblique.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSansMono-Oblique.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSansMono.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSansMono.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSerif-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSerif-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSerif-BoldItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSerif-BoldItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSerif-Italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSerif-Italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSerif.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/DejaVuLGCSerif.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/fonts/dejavu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/glass.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/link.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/resource-files/x.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/script-files/jquery-3.7.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/script-files/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/script-files/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/script-files/search-page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/script-files/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/tag-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/trabajo_documentacion/module-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/trabajo_documentacion/trabajo_documentacion/Estado.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/trabajo_documentacion/trabajo_documentacion/Main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/trabajo_documentacion/trabajo_documentacion/Pedido.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/trabajo_documentacion/trabajo_documentacion/Producto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/trabajo_documentacion/trabajo_documentacion/Servicio.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/trabajo_documentacion/trabajo_documentacion/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/trabajo_documentacion/trabajo_documentacion/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/type-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../doc/uml/UML.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trabajo_documentacion.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trabajo_documentacion/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trabajo_documentacion/Servicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/trabajo_documentacion/Servicio.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="3B2DQPp8Tx9VDZyigs4NlcL5S9f" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Alumno_ciclo/Documents/GitHub/eclipse/trabajo_documentacion/src",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1a5813c-a9ce-46a4-912f-e512793c28a5" name="Changes" comment="" />
+      <created>1773678259926</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1773678259926</updated>
+      <workItem from="1773678284055" duration="13421000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

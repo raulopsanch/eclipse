@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * @version 1.0
  */
 public class Servicio {
-	private ArrayList<Pedido> pedido;
+private ArrayList<Pedido> pedido;
 	
 	
 	/**
@@ -70,7 +70,6 @@ public class Servicio {
 
 		System.out.println("Identificador no encontrado");
 		return false;
-
 	}
 	
 }
