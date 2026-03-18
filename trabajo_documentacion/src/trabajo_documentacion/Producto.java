@@ -30,6 +30,10 @@ public class Producto {
 	public String getNombreProducto() {
 		return this.nombre;
 	}
+
+	public void setNombreProducto(String nombre) {
+		this.nombre = nombre;
+	}
 	
 	
 	/**

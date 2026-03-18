@@ -2,7 +2,7 @@ package trabajo_documentacion;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
+import java.util.ArrayList;
 
 /**
  * <p>Clase principal que representa un pedido en el sistema.
@@ -23,8 +23,8 @@ public class Pedido {
 	private LocalDate fechaRealizacion;
 	/** Fecha estimada de entrega del pedido */
 	private LocalDate fechaEntrega;
-	/** Array que almacena todos los pedidos*/
-	private Pedido[] pedidos;
+	/** ArrayList que almacena todos los pedidos*/
+	private ArrayList<Pedido> pedidos;
 	/** Contador de pedidos */
 	private int contadorPedidos;
 	
@@ -34,7 +34,6 @@ public class Pedido {
 	 * <p>Inicializa el array de pedidos</p>
 	*/
 	public Pedido() {
-		this.pedidos = new Pedido[1000];
 		this.contadorPedidos = 0;
 	}
 	
@@ -113,7 +112,7 @@ public class Pedido {
 	 * 
 	 * @return array de pedidos
 	 */
-	public Pedido[] getPedidos() {
+	public ArrayList<Pedido> getPedidos() {
 		return this.pedidos;
 	}
 	
@@ -139,7 +138,7 @@ public class Pedido {
 	 */
 	public Pedido crearPedido(String nombre, double precio, Estado estado,
 							  int diasEntrega) {
-		if (this.contadorPedidos < this.pedidos.length) {
+		if (this.contadorPedidos < this.pedidos.size()) {
 			int nuevoId = 1000 + this.contadorPedidos + 1;
 			
 			this.fechaRealizacion = LocalDate.now();
@@ -148,7 +147,7 @@ public class Pedido {
 			Pedido nuevoPedido = new Pedido(nuevoId, nombre, precio, estado,
 					fechaRealizacion, fechaEntrega);
 					
-			pedidos[this.contadorPedidos] = nuevoPedido;
+			pedidos.add(nuevoPedido);
 			this.contadorPedidos++;
 
 			 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
@@ -176,12 +175,12 @@ public class Pedido {
 	 */
 	public String consultarPedidoPorId(int id) {
 		for (int i = 0; i < this.contadorPedidos; i++) {
-			if (pedidos[i] != null && pedidos[i].getId() == this.id) {
-				return pedidos[i].toString();
+			if (id == this.id) {
+				return pedidos.get(i).toString();
 			}
 		}
-		
 		return "Error, el id" + this.id + " no existe en el sistema";
+
 	}
 	
 	
@@ -204,8 +203,8 @@ public class Pedido {
 	public double precioTotal() {
 		double suma = 0;
 		
-		for (int i = 0; i < pedidos.length; i++) {
-			suma += pedidos[i].getProducto().getPrecioProducto();
+		for (int i = 0; i < pedidos.size() - 1; i++) {
+			suma += pedidos.get(i).getProducto().getPrecioProducto();
 		}
 		return suma;
 	}
@@ -216,7 +215,7 @@ public class Pedido {
 	 * 
 	 * @param nombre
 	 */
-	public void fechaDeRealizacion(String nombre) {
+	public void verFechaDeRealizacion(String nombre) {
 		for (Pedido p : pedidos) {
 			if (this.producto.getNombreProducto().equalsIgnoreCase(nombre)) {
 				System.out.println(p.fechaRealizacion);

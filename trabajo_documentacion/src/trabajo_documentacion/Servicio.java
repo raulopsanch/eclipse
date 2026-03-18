@@ -1,5 +1,7 @@
 package trabajo_documentacion;
 
+import java.util.ArrayList;
+
 /**
  * <p>Clase que sirve para hacer algunas modificaciones o borrar
  * algún pedido del sistema</p>
@@ -8,14 +10,14 @@ package trabajo_documentacion;
  * @version 1.0
  */
 public class Servicio {
-	private Pedido pedido;
+	private ArrayList<Pedido> pedido;
 	
 	
 	/**
 	 * <P>Constructor principal de la clase Servicio</p>
 	 * @param pedido
 	 */
-	public Servicio (Pedido pedido) {
+	public Servicio (ArrayList<Pedido> pedido) {
 		this.pedido = pedido;
 	}
 	
@@ -23,7 +25,7 @@ public class Servicio {
 	 *<p>Obtiene todos los datos de un pedido</p>
 	 * @return Datos de un pedido
 	 */
-	public Pedido getPedido() {
+	public ArrayList<Pedido> getPedido() {
 		return this.pedido;
 	}
 	
@@ -37,11 +39,11 @@ public class Servicio {
 	 * @param estado
 	 * @param diasEntrega
 	 */
-	public void modificarPedido(Pedido[] pedido, int id, 
+	public void modificarPedido(ArrayList<Pedido> pedido, int id,
 			String nombre, double precio, Estado estado, int diasEntrega) {
-		for (int i = 0; i < pedido.length; i++) {
-			if (id == pedido[i].getId()) {
-				pedido[i] = pedido[i].crearPedido(nombre, precio, estado, diasEntrega);
+		for (int i = 0; i < pedido.size() -1; i++) {
+			if (id == pedido.get(i).getId()) {
+
 			}
 		}
 	}
@@ -49,14 +51,16 @@ public class Servicio {
 	
 	/**
 	 * <p>Borra un pedido del sistema</p>
-	 * @param pedido
+	 * @param pedidos
 	 * @param id
 	 */
-	public boolean cancelarPedido(Pedido[] pedidos, int id) {
-		for (int i = 0; i < pedidos.length; i++) {
-			if (pedidos[i].getId() == id) {
-				pedidos[i] = null;
+	public boolean cancelarPedido(ArrayList<Pedido> pedidos, int id) {
+		for (int i = 0; i < pedidos.size() - 1; i++) {
+			Pedido pedidoActual = pedidos.get(i);
+			if (pedidoActual.getId() == id) {
+				pedidos.remove(i);
 				System.out.println("Pedido cancelado");
+				pedidos.trimToSize();
 				return true;
 			}
 		}
