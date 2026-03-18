@@ -32,7 +32,7 @@ public class Nombres {
 		}
 		
 		System.out.println("listaNombres ordenado");
-		
+		listaNombres.sort(null);
 	}
 	
 	
