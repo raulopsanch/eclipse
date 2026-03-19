@@ -29,8 +29,6 @@ public class NumEnteros {
 		BorrarNumerosMayores(listNumeros);
 		mostrarLista(listNumeros);
 		
-		
-
 	}
 	
 	
@@ -90,7 +88,6 @@ public class NumEnteros {
 		for (int i = 0; i < 5; i++) {
 			lista.remove(lista.size() - 1);
 		}
-				
 	}
 	
 }
