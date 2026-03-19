@@ -25,7 +25,7 @@ public class NumEnteros {
 		System.out.println("Menor: " + numeroMenor(listNumeros));
 		System.out.println();
 		
-		System.out.println("Borrar los 5 números mayores");
+		System.out.println("Lista números sin los 5 números mayores");
 		BorrarNumerosMayores(listNumeros);
 		mostrarLista(listNumeros);	
 	}
