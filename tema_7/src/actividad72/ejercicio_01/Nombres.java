@@ -1,6 +1,7 @@
-package ejercicio_01;
+package actividad72.ejercicio_01;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Nombres {
 
@@ -30,9 +31,31 @@ public class Nombres {
 		for (String lN : listaNombres) {
 			System.out.println(lN);
 		}
+		System.out.println();
 		
 		System.out.println("listaNombres ordenado");
-		listaNombres.sort(null);
+		Collections.sort(listaNombres);
+		
+		for (String lN : listaNombres) {
+			System.out.println(lN);
+		}
+		System.out.println(); 
+		
+		System.out.println("Eliminar a “Pedro” y “Olivia“ de la lista");
+		listaNombres.remove("Pedro");
+		listaNombres.remove("Olivia");
+		
+		for (String n : listaNombres) {
+			System.out.println(n);
+		}
+		System.out.println();
+		System.out.println("Mostrar los nombres que comienzan por “J” y “L”.");
+		for (String n : listaNombres) {
+			if (n.charAt(0) == 'J' || n.charAt(0) == 'L') {
+				System.out.println(n);
+			}
+		}
+		
 	}
 	
 	
@@ -44,8 +67,6 @@ public class Nombres {
 		}
 	}
 	
-	public static void ordenarLista(ArrayList<String> lista) {
-		
-	}
+	
 
 }
