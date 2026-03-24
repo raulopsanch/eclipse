@@ -36,7 +36,11 @@ public class Main {
         System.out.println();
 
         System.out.println("¿Se encuentra una persona llamada Carlos en la lista?");
-        
+        Iterator<Persona> iterator = personas.iterator();
+        while (iterator.hasNext()) {
+            Persona person = (Persona) iterator.next();
 
+            if (person.)
+        }
     }
 }
