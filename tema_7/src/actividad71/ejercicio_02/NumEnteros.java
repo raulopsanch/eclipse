@@ -1,4 +1,4 @@
-package actividad72.ejercicio_02;
+package actividad71.ejercicio_02;
 
 import java.util.ArrayList;
 import java.util.Collections;
