@@ -10,6 +10,11 @@ public class GestionArrayList {
     }
 
 
+    public ArrayList<Integer> getNumeros() {
+        return numeros;
+    }
+
+
     public void llenado(int llenar) {
         Random random = new Random();
 
@@ -56,6 +61,12 @@ public class GestionArrayList {
         GestionArrayList gestion = new GestionArrayList();
 
         gestion.llenado(10);
+
+        gestion.mostrarContenido();
+
+        System.out.println(gestion.sumarContenido());
+
+        gestion.borrarImpares();
 
         gestion.mostrarContenido();
     }
