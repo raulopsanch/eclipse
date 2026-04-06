@@ -90,7 +90,7 @@ public class OperacionesArrayList {
         System.out.println();
 
         System.out.println("\n=== ORDENAMIENTO DESCENDENTE ===");
-        operaciones.ordenarDescendente();--------------------------------------------------------------------------------------
+        operaciones.ordenarDescendente();
         operaciones.mostrarLista();
         System.out.println();
     }
