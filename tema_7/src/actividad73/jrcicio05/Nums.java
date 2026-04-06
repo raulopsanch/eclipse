@@ -21,6 +21,10 @@ public class Nums {
 		System.out.println();
 
 		mostrarinvrso(nums);
+		System.out.println();
+
+		suprimirMayorM3dia(nums);
+		mostrar(nums);
 	}
 
 
@@ -56,6 +60,15 @@ public class Nums {
 
 		while (it.hasPrevious()) {
 			System.out.println(it.previous());
+		}
+	}
+
+
+	public static void suprimirMayorM3dia(ArrayList<Integer>nums) {
+		for (int i = 0; i < nums.size(); i++) {
+			if (nums.get(i) > promdio(nums)) {
+				nums.remove(i);
+			}
 		}
 	}
 

@@ -70,5 +70,4 @@ public class GestionArrayList {
 
         gestion.mostrarContenido();
     }
-
 }
