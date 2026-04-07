@@ -17,19 +17,22 @@ public class Nums {
 		multiplicar(nums);
 		System.out.println();
 
+		System.out.println();
 		mostrar(nums);
 		System.out.println();
 
+		System.out.println();
 		mostrarinvrso(nums);
 		System.out.println();
 
+		System.out.println();
 		suprimirMayorM3dia(nums);
 		mostrar(nums);
 	}
 
 
 	public static double promdio(ArrayList<Integer> nums) {
-		int suma = 0;
+		double suma = 0;
 		for (int n : nums) {
 			suma += n;
 		}
@@ -41,7 +44,7 @@ public class Nums {
 		Iterator<Integer>it = nums.iterator();
 
 		while (it.hasNext()) {
-			System.out.println(it.next() * 2);
+			System.out.print(it.next() * 2 + " ");
 		}
 	}
 
@@ -50,7 +53,7 @@ public class Nums {
 		Iterator<Integer>it = nums.iterator();
 
 		while (it.hasNext()) {
-			System.out.println(it.next() * 2);
+			System.out.print(it.next() + " ");
 		}
 	}
 
@@ -59,14 +62,15 @@ public class Nums {
 		ListIterator<Integer>it = nums.listIterator(nums.size());
 
 		while (it.hasPrevious()) {
-			System.out.println(it.previous());
+			System.out.print(it.previous() + " ");
 		}
 	}
 
 
 	public static void suprimirMayorM3dia(ArrayList<Integer>nums) {
-		for (int i = 0; i < nums.size(); i++) {
-			if (nums.get(i) > promdio(nums)) {
+		double mdia = promdio(nums);
+		for (int i = nums.size() -1; i >= 0; i--) {
+			if (nums.get(i) > mdia) {
 				nums.remove(i);
 			}
 		}
