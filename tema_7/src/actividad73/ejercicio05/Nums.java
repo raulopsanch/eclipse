@@ -1,4 +1,4 @@
-package actividad73.jrcicio05;
+package actividad73.ejercicio05;
 
 import java.util.*;
 
@@ -11,7 +11,7 @@ public class Nums {
 		nums.add(20);
 		nums.add(25);
 
-		System.out.println(promdio(nums));
+		System.out.println(promedio(nums));
 		System.out.println();
 
 		multiplicar(nums);
@@ -22,16 +22,16 @@ public class Nums {
 		System.out.println();
 
 		System.out.println();
-		mostrarinvrso(nums);
+		mostrarInverso(nums);
 		System.out.println();
 
 		System.out.println();
-		suprimirMayorM3dia(nums);
+		suprimirMayorMedia(nums);
 		mostrar(nums);
 	}
 
 
-	public static double promdio(ArrayList<Integer> nums) {
+	public static double promedio(ArrayList<Integer> nums) {
 		double suma = 0;
 		for (int n : nums) {
 			suma += n;
@@ -58,7 +58,7 @@ public class Nums {
 	}
 
 
-	public static void mostrarinvrso(ArrayList<Integer>nums) {
+	public static void mostrarInverso(ArrayList<Integer>nums) {
 		ListIterator<Integer>it = nums.listIterator(nums.size());
 
 		while (it.hasPrevious()) {
@@ -67,8 +67,8 @@ public class Nums {
 	}
 
 
-	public static void suprimirMayorM3dia(ArrayList<Integer>nums) {
-		double mdia = promdio(nums);
+	public static void suprimirMayorMedia(ArrayList<Integer>nums) {
+		double mdia = promedio(nums);
 		for (int i = nums.size() -1; i >= 0; i--) {
 			if (nums.get(i) > mdia) {
 				nums.remove(i);
