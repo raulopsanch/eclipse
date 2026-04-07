@@ -1,4 +1,4 @@
-package actividad73.ejercicio05;
+package actividad73.ejercicio_05;
 
 import java.util.*;
 
