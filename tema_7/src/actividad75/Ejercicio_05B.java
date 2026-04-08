@@ -33,7 +33,7 @@ public class Ejercicio_05B {
         while (it.hasNext()) {
             String dni = it.next();
             String nombreCompleto = nombres.get(dni);
-            String[] partes = nombrecompleto.split(" ");
+            String[] partes = nombreCompleto.split(" ");
             System.out.print(partes[1] + " " + partes[2] + ", " + partes[0]);
             System.out.println(" con dni " + dni);
         }
