@@ -26,6 +26,31 @@ public class Ejercicio_05 {
         System.out.println(pruebas.containsKey(5));
         System.out.println();
 
-        
+        System.out.println("Comprobar si el código 11 se encuentra en la colección.");
+        System.out.println(pruebas.containsKey(11));
+        System.out.println();
+
+        System.out.println("Eliminar el elemento 24");
+        System.out.println("Elemento eliminado: " + pruebas.remove(24));
+        System.out.println();
+
+        System.out.println("Mostrar todos los elementos de la colección (con for-each)");
+        for (int clave : pruebas.keySet()) {
+            String valor = pruebas.get(clave);
+            System.out.printf("Clave: %s, Valor: %s", clave, valor);
+            System.out.println();
+        }
+        System.out.println();
+
+        System.out.println("Recorrer toda la colección, mostrando únicamente los productos con " +
+                "código par (con for-each).");
+        for (int clave : pruebas.keySet()) {
+            String valor = pruebas.get(clave);
+            if (clave % 2 == 0) {
+                System.out.printf("Clave: %s, Valor: %s", clave, valor);
+                System.out.println();
+            }
+        }
+
     }
 }
