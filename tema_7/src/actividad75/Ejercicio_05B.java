@@ -32,7 +32,7 @@ public class Ejercicio_05B {
         Iterator<String> it = nombres.keySet().iterator();
         while (it.hasNext()) {
             String dni = it.next();
-            String nombrecompleto = nombres.get(dni);
+            String nombreCompleto = nombres.get(dni);
             String[] partes = nombrecompleto.split(" ");
             System.out.print(partes[1] + " " + partes[2] + ", " + partes[0]);
             System.out.println(" con dni " + dni);
