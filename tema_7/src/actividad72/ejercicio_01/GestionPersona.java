@@ -10,5 +10,7 @@ public class GestionPersona {
     }
 
 
-    public
+    public void insertar(int clave, String nombre, int edad) {
+        personas.put(clave, new Persona(nombre, edad));
+    }
 }
