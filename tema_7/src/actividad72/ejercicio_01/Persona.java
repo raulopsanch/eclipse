@@ -1,8 +1,12 @@
 package actividad72.ejercicio_01;
 
+import java.util.*;
+
 public class Persona {
-    String nombre;
-    int edad;
+    private int clave;
+    private String nombre;
+    private int edad;
+
 
     public Persona(String nombre, int edad) {
         this.nombre = nombre;
@@ -15,11 +19,6 @@ public class Persona {
     }
 
 
-    public void setEdad(int newEdad) {
-        this.edad = newEdad;
-    }
-
-
     public int getEdad() {
         return this.edad;
     }
@@ -29,4 +28,5 @@ public class Persona {
     public String toString() {
         return this.nombre + ", " + this.edad + " años.";
     }
+
 }
