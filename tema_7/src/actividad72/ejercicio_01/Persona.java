@@ -22,6 +22,11 @@ public class Persona {
     public int getEdad() {
         return this.edad;
     }
+    
+    
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
 
 
     @Override
