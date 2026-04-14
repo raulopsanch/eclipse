@@ -26,9 +26,7 @@ public class Main {
 		System.out.println();
 		
 		
-		ArrayList<String> result =  gc.getListaPatron("in");
-		
-		gc.mostrarListaPatron(result);
+		gc.mostrarListaPatron("in");
 	}
 
 }
