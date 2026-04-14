@@ -14,6 +14,11 @@ public class GestionProductos {
         this.siguienteId = 101;
     }
 
+    
+    public HashMap<Integer, Producto> getProductos() {
+    	return this.productos;
+    }
+    
 
     public void insertar(String nombre, String categoria) {
         productos.put(this.siguienteId, new Producto(nombre, categoria));
