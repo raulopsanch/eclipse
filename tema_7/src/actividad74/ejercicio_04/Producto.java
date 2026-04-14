@@ -1,6 +1,7 @@
 package actividad74.ejercicio_04;
 
 public class Producto {
+    private int id;
     private String nombre;
     private String categoria;
 
@@ -10,6 +11,10 @@ public class Producto {
         this.categoria = categoria;
     }
 
+    
+    public int getId() {
+    	return id;
+    }
 
     public String getNombre() {
         return this.nombre;

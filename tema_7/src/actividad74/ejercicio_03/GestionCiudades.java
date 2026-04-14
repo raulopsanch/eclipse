@@ -44,15 +44,24 @@ public class GestionCiudades {
     }
     
     
-    public ArrayList<String> ciudadesPorPatron(String patron) {
+    public ArrayList<String> getListaPatron(String patron) {
     	ArrayList<String> result = new ArrayList<>();
     	
     	for (String ciudad : ciudades) {
-    		if (ciudad.toLowerCase().contains(patron)) {
+    		if (ciudad.toLowerCase().contains(patron.toLowerCase())) {
     			result.add(ciudad);
     		}
     	}
     	
     	return result;
+    }
+    
+    
+    public void mostrarListaPatron(ArrayList<String> lista) {
+    	System.out.println("Ciudades que cumplen el patrón");
+    	
+    	for (String ciudad : lista) {
+    		System.out.println(ciudad);
+    	}
     }
 }
