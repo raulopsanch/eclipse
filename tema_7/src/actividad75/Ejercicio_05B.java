@@ -30,6 +30,7 @@ public class Ejercicio_05B {
 
     public static void recorrerMap(HashMap<String, String>nombres) {
         Iterator<String> it = nombres.keySet().iterator();
+        
         while (it.hasNext()) {
             String dni = it.next();
             String nombreCompleto = nombres.get(dni);
