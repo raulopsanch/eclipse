@@ -14,6 +14,11 @@ public class GestionProductos {
         this.siguienteId = 101;
     }
 
+    
+    public HashMap<Integer, Producto> getProductos() {
+    	return this.productos;
+    }
+    
 
     public boolean perteneceCategoria(String categoria, Producto producto) {
         return producto.getCategoria().equalsIgnoreCase(categoria);

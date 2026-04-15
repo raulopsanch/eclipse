@@ -44,7 +44,7 @@ public class GestionCiudades {
     }
     
     
-    public ArrayList<String> getListaPatron(String patron) {
+    private ArrayList<String> getListaPatron(String patron) {
     	ArrayList<String> result = new ArrayList<>();
     	
     	for (String ciudad : ciudades) {
@@ -57,9 +57,10 @@ public class GestionCiudades {
     }
     
     
-    public void mostrarListaPatron(ArrayList<String> lista) {
+    public void mostrarListaPatron(String patron) {
     	System.out.println("Ciudades que cumplen el patrón");
     	
+    	ArrayList<String >lista = getListaPatron(patron);
     	for (String ciudad : lista) {
     		System.out.println(ciudad);
     	}

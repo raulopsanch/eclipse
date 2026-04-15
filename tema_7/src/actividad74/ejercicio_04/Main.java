@@ -57,6 +57,7 @@ public class Main {
 			System.out.println("No se encontraron productos en la categoría "
 					+ categoria);
 		}
+
 	}
 
 }
