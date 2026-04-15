@@ -15,26 +15,6 @@ public class GestionProductos {
     }
 
 
-    public void insertar(String nombre, String categoria) {
-        productos.put(this.siguienteId, new Producto(nombre, categoria));
-        this.siguienteId++;
-    }
-
-
-    public void mostrar() {
-        System.out.println("===LISTA DE PRODUCTOS===");
-
-        Iterator<Map.Entry<Integer, Producto>> it = this.productos.entrySet().iterator();
-
-        while (it.hasNext()) {
-            Map.Entry<Integer, Producto> entry = it.next();
-            int id = entry.getKey();
-            Producto p = entry.getValue();
-            System.out.println("ID: " + id + " | " + p.toString());
-        }
-    }
-
-
     public boolean perteneceCategoria(String categoria, Producto producto) {
         return producto.getCategoria().equalsIgnoreCase(categoria);
         

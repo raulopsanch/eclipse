@@ -6,8 +6,9 @@ public class Producto {
     private String categoria;
 
 
-    public Producto (String nombre, String categoria) {
-        this.nombre = nombre;
+    public Producto (int id, String nombre, String categoria) {
+        this.id = id;
+    	this.nombre = nombre;
         this.categoria = categoria;
     }
 
@@ -28,6 +29,6 @@ public class Producto {
 
     @Override
     public String toString() {
-        return this.nombre + "  --  " + this.categoria;
+        return this.id + " | " + this.nombre + "  --  " + this.categoria;
     }
 }
