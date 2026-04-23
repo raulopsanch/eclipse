@@ -29,9 +29,6 @@ public class Main {
 		System.out.println();
 		System.out.println("==== SET DE PRODUCTOS DESPUÉS DE BORRAR LAPTOP====");
 		mostrarSet(productos);
-		
-		
-
 	}
 	
 	public static void mostrarSet(Set<Producto> setList) {
