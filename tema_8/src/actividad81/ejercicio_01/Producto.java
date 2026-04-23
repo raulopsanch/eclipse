@@ -3,13 +3,12 @@ package actividad81.ejercicio_01;
 import java.util.Objects;
 
 public class Producto {
-	private String id;
     private String nombre;
     private String categoria;
     private double precio;
 
 
-    public Producto(String id, String nombre, String categoria, double precio) {
+    public Producto(String nombre, String categoria, double precio) {
         this.nombre = nombre;
         this.categoria = categoria;
         this.precio = precio;
