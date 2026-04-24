@@ -5,7 +5,7 @@ import java.util.*;
 public class Email {
 
 	public static void main(String[] args) {
-		Set<String> emails = new HashSet<>();
+		HashSet<String> emails = new HashSet<>();
 		
 		
 		emails.add("raul@gmail.com");
