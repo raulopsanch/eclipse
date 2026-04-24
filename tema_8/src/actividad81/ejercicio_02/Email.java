@@ -13,7 +13,7 @@ public class Email {
 		emails.add("prog@sdf.com");
 		emails.add("bbdd@sdf.com");
 		emails.add("ldm@sdf.com");
-		
+
 
 		mostrar(emails);
 		System.out.println();

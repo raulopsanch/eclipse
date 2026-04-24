@@ -17,8 +17,8 @@ public class Numero {
 		
 		
 		System.out.println();
-		System.out.println("Conteido del ArrayList: " + listaNumeros);
-		System.out.println("Conteido del HashSet: " + numerosSet);
+		System.out.println("Contenido del ArrayList: " + listaNumeros);
+		System.out.println("Contenido del HashSet: " + numerosSet);
 		
 	}
 
