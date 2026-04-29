@@ -13,10 +13,11 @@ public class Main {
 
 
         nombres.sort((a, b) -> a.compareTo(b));
-        nombres.forEach(nombre -> System.out.println(nombre));
+        nombres.forEach(nombre -> System.out.print(nombre + " "));
 
         System.out.println();
 
-        numeros.sort((a, b) -> );
+        numeros.sort((a, b) -> a - b);
+        numeros.forEach(numero -> System.out.print(numero + " "));
     }
 }
