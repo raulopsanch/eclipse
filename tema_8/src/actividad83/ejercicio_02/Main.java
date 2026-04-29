@@ -17,7 +17,7 @@ public class Main {
 
         System.out.println();
 
-        numeros.sort((a, b) -> a - b);
+        numeros.sort((a, b) -> a.compareTo(b));
         numeros.forEach(numero -> System.out.print(numero + " "));
     }
 }
