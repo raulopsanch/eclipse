@@ -31,6 +31,7 @@ public class Main {
 
 
     public static void mostrar(ArrayList<Producto> productos) {
+
         productos.forEach(p -> System.out.println(p));
     }
 }
