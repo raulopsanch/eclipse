@@ -1,7 +1,6 @@
 package actividad84.ejercicio_01;
 
-import java.util.Scanner;
-import java.util.Set;
+import java.util.Objects;
 
 public class Alumno {
     private String nombre;
@@ -36,33 +35,6 @@ public class Alumno {
     }
 
 
-    public String buscarAlumno(String nombre, Set<Alumno> alumnos) {
-        Scanner entrada = new Scanner(System.in);
-
-        System.out.print("Introduce un nombre: ");
-        nombre = entrada.nextLine();
-
-        if (this.nombre.equalsIgnoreCase(nombre)) {
-            return this.nombre + ", " + this.edad;
-        }
-        return "Alumno no encontrado";
-    }
-
-
-    public String borrarAlumno(String nombre, Set<Alumno> alumnos) {
-        Scanner entrada = new Scanner(System.in);
-
-        System.out.print("Introduce un nombre: ");
-        nombre = entrada.nextLine();
-
-        if (this.nombre.equalsIgnoreCase(nombre)) {
-            alumnos.remove(this.nombre);
-            return "Alumno eliminado";
-        }
-        return "Alumno no encontrado";
-    }
-
-
     @Override
     public String toString() {
         return this.nombre + ", " + this.edad + " años.";
@@ -84,6 +56,6 @@ public class Alumno {
 
     @Override
     public int hashCode() {
-        return super.hashCode(nombre);
+        return Objects.hash(nombre);
     }
 }
