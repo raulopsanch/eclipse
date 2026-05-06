@@ -9,16 +9,24 @@ public class Main {
         Scanner entrada = new Scanner(System.in);
         Set<Alumno> alumnos = new HashSet<>();
 
-        for (int i = 0; i < 5; i++) {
-            System.out.println("Alumno #" + (i + 1));
+        
+        int i = 0;
+        while (i < 5) {
+        	System.out.println("Alumno #" + (i + 1));
             System.out.print("Introduce el nombre completo: ");
             String nombre = entrada.nextLine();
 
             System.out.print("Introduce tu edad: ");
             int edad = Integer.parseInt(entrada.nextLine());
 
-            alumnos.add(new Alumno(nombre, edad));
+            if(alumnos.add(new Alumno(nombre, edad))) {
+            	i++;
+            } else {
+            	System.out.println("Error: El nombre '" + nombre + "' ya existe. Intenta con otro nombre.");
+            }
+            
         }
+        
 
         System.out.println();
         System.out.println("HashSet de alumnos");
