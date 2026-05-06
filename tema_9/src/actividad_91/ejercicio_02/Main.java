@@ -1,4 +1,4 @@
-package actividad_91.ejercicio_01;
+package actividad_91.ejercicio_02;
 
 import java.util.Scanner;
 
@@ -9,17 +9,20 @@ public class Main {
 
         System.out.print("Introduce un número: ");
         int num = entrada.nextInt();
+        int resultadoObligado = 1;
 
         try {
-            System.out.println("El resultado es. " + nums[5]/num);
+            int resultado = nums[5]/num;
+            resultadoObligado = resultado;
         }
         catch (ArithmeticException e) {
             System.out.println("Error: No se puede dividir por cero");
-            System.out.println("Error: " + e.getMessage());
         }
         catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Error: índice fuera del array");
-            System.out.println("Error: " + e.getMessage());
+        }
+        finally {
+            System.out.println("El resultado es: " + resultadoObligado);
         }
     }
 }
