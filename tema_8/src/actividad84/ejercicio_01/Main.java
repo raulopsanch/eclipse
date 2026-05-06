@@ -1,6 +1,7 @@
 package actividad84.ejercicio_01;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -40,6 +41,12 @@ public class Main {
         System.out.println("-------------");
         //Buscar alumno
         System.out.print(buscarAlumno(alumnos, entrada));
+        
+        System.out.println();
+        System.out.println("Eliminar alumno");
+        System.out.println("---------------");
+        //Eliminar alumno
+        eliminarAlumno(alumnos, entrada);
     }
 
 
@@ -49,28 +56,27 @@ public class Main {
 
 
     public static boolean buscarAlumno(Set<Alumno> alumnos, Scanner scanner) {
-        System.out.println("Introduce el nombre: ");
+        System.out.print("Introduce el nombre: ");
         String nombre = scanner.nextLine();
 
         for (Alumno a : alumnos) {
-            return a.getNombre().equalsIgnoreCase(nombre);
+            if (a.getNombre().equalsIgnoreCase(nombre)) {
+            	return true;
+            }
         }
         return false;
     }
 
     public static void eliminarAlumno(Set<Alumno> alumnos, Scanner scanner) {
-        System.out.println("Introduce el nombre: ");
+        System.out.print("Introduce el nombre: ");
         String nombre = scanner.nextLine();
 
-        for (Alumno a : alumnos) {
-            if (a.getNombre().equalsIgnoreCase(nombre)) {
-                alumnos.remove(nombre);
-                System.out.println("Alumno eliminado");
-                break;
-            } else {
-                System.out.println("Alumno no encontrado");
-                break;
-            }
+        boolean eliminado = alumnos.removeIf(a -> a.getNombre().equalsIgnoreCase(nombre));
+        
+        if (eliminado) {
+        	System.out.print("Alumno eliminado correctamente");
+        } else {
+        	System.out.print("Alumno no encontrado");
         }
     }
 }
