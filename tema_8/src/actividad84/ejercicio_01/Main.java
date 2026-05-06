@@ -31,7 +31,7 @@ public class Main {
         System.out.println("Buscar alumno");
         System.out.println("-------------");
         //Buscar alumno
-        buscarAlumno(alumnos, entrada);
+        System.out.print(buscarAlumno(alumnos, entrada));
     }
 
 
