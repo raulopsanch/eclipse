@@ -24,12 +24,9 @@ public class Main {
 
     public static void AlturaOrdenCreciente(ArrayList<Jugador>lista) {
         System.out.println("Alturas en orden creciente");
-        ArrayList<Double> alturas = new ArrayList<>();
-        for (Jugador j : lista ) {
-            alturas.add(j.getAltura());
-        }
-
-        Collections.sort(alturas);
+        ArrayList<Jugador> alturas = new ArrayList<>(lista);
+        
+        alturas.sort(Comparator.comparing(Jugador::getAltura));
         alturas.forEach(a -> System.out.println(a));
     }
 
