@@ -12,17 +12,17 @@ public class Main {
         j.add(new Jugador(743, "Ana", 62.5, 1.72));
         j.add(new Jugador(875, "Sofía", 56.7, 1.62));
 
-        AlturaOrdenCreciente(j);
+        ordenarAltura(j);
         System.out.println();
-        nombreCreciente(j);
+        OrdenarNombre(j);
         System.out.println();
-        pesoDecreciente(j);
+        OrdenarPesoDecreciente(j);
         System.out.println();
         jugadorMasPesado(j);
     }
 
 
-    public static void AlturaOrdenCreciente(ArrayList<Jugador>lista) {
+    public static void ordenarAltura(ArrayList<Jugador>lista) {
         System.out.println("Alturas en orden creciente");
         ArrayList<Jugador> alturas = new ArrayList<>(lista);
         
@@ -31,7 +31,7 @@ public class Main {
     }
 
 
-    public static void nombreCreciente(ArrayList<Jugador>lista) {
+    public static void OrdenarNombre(ArrayList<Jugador>lista) {
         System.out.println("Jugadores por nombre orden creciente");
         
         Collections.sort(lista, (l1,l2) -> (l1.getNombre().compareTo(l2.getNombre())));
@@ -40,7 +40,7 @@ public class Main {
     }
 
 
-    public static void pesoDecreciente(ArrayList<Jugador>lista) {
+    public static void OrdenarPesoDecreciente(ArrayList<Jugador>lista) {
         System.out.println("Jugadores por peso orden decreciente");
         ArrayList<Jugador> copia = new ArrayList<>(lista);
 
