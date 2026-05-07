@@ -36,7 +36,7 @@ public class Main {
         
         Collections.sort(lista, (l1,l2) -> (l1.getNombre().compareTo(l2.getNombre())));
 
-        lista.forEach(c -> System.out.println(c));
+        lista.forEach(l -> System.out.println(l));
     }
 
 
