@@ -36,11 +36,10 @@ public class Main {
 
     public static void nombreCreciente(ArrayList<Jugador>lista) {
         System.out.println("Jugadores por nombre orden creciente");
-        ArrayList<Jugador> copia = new ArrayList<>(lista);
+        
+        Collections.sort(lista, (l1,l2) -> (l1.getNombre().compareTo(l2.getNombre())));
 
-        copia.sort(Comparator.comparing(Jugador::getNombre));
-
-        copia.forEach(c -> System.out.println(c));
+        lista.forEach(c -> System.out.println(c));
     }
 
 
