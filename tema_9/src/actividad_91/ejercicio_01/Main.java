@@ -15,11 +15,9 @@ public class Main {
         }
         catch (ArithmeticException e) {
             System.out.println("Error: No se puede dividir por cero");
-            System.out.println("Error: " + e.getMessage());
         }
         catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Error: índice fuera del array");
-            System.out.println("Error: " + e.getMessage());
         }
     }
 }

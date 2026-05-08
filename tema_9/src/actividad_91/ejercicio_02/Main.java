@@ -12,7 +12,7 @@ public class Main {
         int resultadoObligado = 1;
 
         try {
-            int resultado = nums[5]/num;
+            int resultado = nums[1]/num;
             resultadoObligado = resultado;
         }
         catch (ArithmeticException e) {
