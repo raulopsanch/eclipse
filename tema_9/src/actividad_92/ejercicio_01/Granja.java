@@ -5,16 +5,18 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class Granja {
+    public static Set<String> animales = new HashSet<>();
+
     public static void main (String[] args) {
         Scanner entrada = new Scanner(System.in);
-        Set<String> animales = new HashSet<>();
+        int opcion;
+
         animales.add("conejos");
         animales.add("gallinas");
         animales.add("caballos");
         animales.add("ovejas");
         animales.add("vacas");
 
-        int opcion;
 
         do {
             System.out.println("1.- Agregar animal");
@@ -29,16 +31,16 @@ public class Granja {
 
             switch (opcion) {
                 case 1:
-                    agregarAnimal(entrada, animales);
+                    agregar();
                     break;
                 case 2:
-                    mostrarAnimales(animales);
+                    animales.forEach(a -> System.out.println(a));
                     break;
                 case 3:
-                    buscarAnimal(entrada, animales);
+                    buscar(entrada);
                     break;
                 case 4:
-                    mostrarCantidadAnimales(animales);
+                    System.out.println("Hay " + animales.size() + " animales");
                     break;
                 case 5:
                     System.out.println("Saliendo del programa");
@@ -52,25 +54,17 @@ public class Granja {
     }
 
 
-    public static void agregarAnimal(Scanner entrada, Set<String> animales) {
+    static void agregar() {
+        Scanner entrada = new Scanner(System.in);
         System.out.print("Introduce un animal: ");
-        String animal = entrada.nextLine().trim().toLowerCase();
-
-        if (animales.contains(animal)) {
-            System.out.println("Este animal ya existe en la granja");
-        } else {
-            animales.add(animal);
-            System.out.println("Animal agreado correctamente a la granja");
+        if (!animales.add(entrada.nextLine())) {
+            System.out.println("El animal ya existe");
         }
+
     }
 
 
-    public static void mostrarAnimales(Set<String> animales) {
-        animales.forEach(a -> System.out.println(a));
-    }
-
-
-    public static void buscarAnimal(Scanner entrada, Set<String> animales) {
+    public static void buscar(Scanner entrada) {
         System.out.print("Introduce un animal: ");
         String animal = entrada.nextLine();
 
@@ -81,8 +75,4 @@ public class Granja {
         }
     }
 
-
-    public static void mostrarCantidadAnimales(Set<String> animales) {
-        System.out.println("Hay " + animales.size() + " animales");
-    }
 }
