@@ -50,7 +50,6 @@ public class Granja {
             }
 
         } while (opcion != 5);
-
     }
 
 
