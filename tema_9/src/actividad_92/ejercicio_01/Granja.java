@@ -17,14 +17,13 @@ public class Granja {
         animales.add("ovejas");
         animales.add("vacas");
 
-
+        System.out.println("Menú de opciones");
         do {
             System.out.println("1.- Agregar animal");
             System.out.println("2.- Mostrar todos");
             System.out.println("3.- Buscar animal");
             System.out.println("4.- Mostrar cantidad de animales");
             System.out.println("5.- Salir");
-            System.out.println();
             System.out.print("Intrdduce una opción: ");
             opcion = entrada.nextInt();
             entrada.nextLine();
